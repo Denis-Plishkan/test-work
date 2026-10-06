@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Специальное предложение — Начните сейчас
+  </title>
+
+  <meta
+    name="description"
+    content="Воспользуйтесь специальным предложением. Оставьте заявку прямо сейчас и получите доступ к выгодным условиям."
+  />
+
+  <meta
+    name="keywords"
+    content="специальное предложение, выгодное предложение, оставить заявку, акция, получить предложение"
+  />
+
+  <meta
+    name="robots"
+    content="index, follow"
+  />
+
+  <meta
+    name="author"
+    content="Your Company"
+  />
+
+  <meta
+    name="theme-color"
+    content="#ffffff"
+  />
+
+  <!-- Open Graph -->
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <meta
+    property="og:title"
+    content="Специальное предложение — Начните сейчас"
+  />
+
+  <meta
+    property="og:description"
+    content="Воспользуйтесь специальным предложением и оставьте заявку прямо сейчас."
+  />
+
+  <meta
+    property="og:image"
+    content="assets/images/hero.webp"
+  />
+
+  <meta
+    property="og:url"
+    content="https://example.com/"
+  />
+
+  <meta
+    property="og:site_name"
+    content="Специальное предложение"
+  />
+
+  <meta
+    property="og:locale"
+    content="ru_RU"
+  />
+
+  <!-- Twitter / X -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content="Специальное предложение — Начните сейчас"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Воспользуйтесь специальным предложением и оставьте заявку прямо сейчас."
+  />
+
+  <meta
+    name="twitter:image"
+    content="assets/images/hero.webp"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/css/intlTelInput.css"
+  />
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  
+  <link rel="stylesheet" href="./css/reset.css">
+
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/global.css">
+ 
+  <link rel="stylesheet" href="./css/components/button.css">
+  <link rel="stylesheet" href="./css/components/header.css">
+  <link rel="stylesheet" href="./css/components/hero.css">
+  <link rel="stylesheet" href="./css/components/benefits.css">
+  <link rel="stylesheet" href="./css/components/about.css">
+  <link rel="stylesheet" href="./css/components/reviews.css">
+  <link rel="stylesheet" href="./css/components/faq.css">
+  <link rel="stylesheet" href="./css/components/lead.css">
+  <link rel="stylesheet" href="./css/components/form.css">
+  <link rel="stylesheet" href="./css/components/sticky-cta.css">
+  <link rel="stylesheet" href="./css/components/modal.css">
+
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#" aria-label="На главную">
+        BRAND
+      </a>
+
+      <a class="header__link" href="#lead-form">
+        Получить предложение
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+
+          <span class="hero__badge">
+            Специальное предложение
+          </span>
+
+          <h1 class="hero__title">
+            Начните менять свою жизнь уже сегодня
+          </h1>
+
+          <p class="hero__description">
+            Получите доступ к специальному предложению и сделайте
+            первый шаг прямо сейчас.
+          </p>
+
+          <div class="hero__timer">
+            <span class="hero__timer-label">
+              Предложение действует:
+            </span>
+
+            <div
+              class="timer"
+              id="timer"
+              aria-live="polite"
+            >
+              <div class="timer__item">
+                <span class="timer__value" id="timer-minutes">15</span>
+                <span class="timer__label">мин</span>
+              </div>
+
+              <span class="timer__separator">:</span>
+
+              <div class="timer__item">
+                <span class="timer__value" id="timer-seconds">00</span>
+                <span class="timer__label">сек</span>
+              </div>
+            </div>
+          </div>
+
+          <a
+            class="button button--primary hero__button"
+            href="#lead-form"
+            data-cta
+          >
+            Начать сейчас
+          </a>
+
+        </div>
+
+        <div class="hero__image-wrapper">
+          <img
+            class="hero__image"
+            src="./assets/images/hero.webp"
+            alt="Иллюстрация специального предложения"
+            width="700"
+            height="700"
+          >
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- BENEFITS -->
+    <section class="benefits section">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="section-heading__eyebrow">
+            Почему мы
+          </span>
+
+          <h2 class="section-heading__title">
+            Всё необходимое в одном месте
+          </h2>
+        </div>
+
+        <div class="benefits__grid">
+
+          <article class="benefit-card">
+            <div class="benefit-card__icon">01</div>
+
+            <h3 class="benefit-card__title">
+              Простой старт
+            </h3>
+
+            <p class="benefit-card__text">
+              Начать можно всего за несколько минут без сложной настройки.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__icon">02</div>
+
+            <h3 class="benefit-card__title">
+              Понятный процесс
+            </h3>
+
+            <p class="benefit-card__text">
+              Вы получаете понятный план действий и поддержку на каждом этапе.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__icon">03</div>
+
+            <h3 class="benefit-card__title">
+              Реальный результат
+            </h3>
+
+            <p class="benefit-card__text">
+              Фокусируемся на практическом результате, а не на лишней теории.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container about__inner">
+
+        <div class="about__image-wrapper">
+          <img
+            class="about__image"
+            src="./assets/images/about.webp"
+            alt="Наша команда"
+            width="700"
+            height="500"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="about__content">
+
+          <span class="section-heading__eyebrow">
+            О нас
+          </span>
+
+          <h2 class="about__title">
+            Мы создаём решения, которые действительно работают
+          </h2>
+
+          <p class="about__text">
+            Наша команда объединяет опыт, технологии и практический подход,
+            чтобы создавать удобные продукты и помогать нашим клиентам
+            достигать поставленных целей.
+          </p>
+
+          <p class="about__text">
+            Мы ценим прозрачность, качество и внимание к деталям.
+            Именно поэтому сопровождаем клиента на каждом этапе.
+          </p>
+
+          <a
+            class="button button--secondary"
+            href="#lead-form"
+          >
+            Узнать больше
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- REVIEWS -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+
+        <div class="section-heading section-heading--center">
+          <span class="section-heading__eyebrow">
+            Отзывы
+          </span>
+
+          <h2 class="section-heading__title">
+            Что говорят наши клиенты
+          </h2>
+        </div>
+
+        <div class="reviews__slider">
+
+          <button
+            class="slider-button slider-button--prev"
+            type="button"
+            aria-label="Предыдущий отзыв"
+            data-slider-prev
+          >
+            ←
+          </button>
+
+          <div class="reviews__viewport">
+            <div class="reviews__track" data-slider-track>
+
+              <article class="review-card">
+                <div class="review-card__author">
+                  <img
+                    src="./assets/images/review-1.webp"
+                    alt="Анна"
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                  >
+
+                  <div>
+                    <h3 class="review-card__name">
+                      Анна
+                    </h3>
+
+                    <span class="review-card__role">
+                      Клиент
+                    </span>
+                  </div>
+                </div>
+
+                <p class="review-card__text">
+                  «Очень понравился подход. Всё понятно, быстро и без
+                  лишней информации. Результат превзошёл ожидания.»
+                </p>
+              </article>
+
+
+              <article class="review-card">
+                <div class="review-card__author">
+                  <img
+                    src="./assets/images/review-2.webp"
+                    alt="Максим"
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                  >
+
+                  <div>
+                    <h3 class="review-card__name">
+                      Максим
+                    </h3>
+
+                    <span class="review-card__role">
+                      Клиент
+                    </span>
+                  </div>
+                </div>
+
+                <p class="review-card__text">
+                  «Получил именно то, что искал. Отдельно хочу отметить
+                  поддержку — всегда отвечали быстро.»
+                </p>
+              </article>
+
+
+              <article class="review-card">
+                <div class="review-card__author">
+                  <img
+                    src="./assets/images/review-3.webp"
+                    alt="Елена"
+                    width="56"
+                    height="56"
+                    loading="lazy"
+                  >
+
+                  <div>
+                    <h3 class="review-card__name">
+                      Елена
+                    </h3>
+
+                    <span class="review-card__role">
+                      Клиент
+                    </span>
+                  </div>
+                </div>
+
+                <p class="review-card__text">
+                  «Удобно, современно и действительно работает.
+                  Однозначно рекомендую попробовать.»
+                </p>
+              </article>
+
+            </div>
+          </div>
+
+          <button
+            class="slider-button slider-button--next"
+            type="button"
+            aria-label="Следующий отзыв"
+            data-slider-next
+          >
+            →
+          </button>
+
+        </div>
+
+        <div
+          class="reviews__dots"
+          data-slider-dots
+          aria-label="Выбор отзыва"
+        ></div>
+
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="container faq__container">
+
+        <div class="section-heading section-heading--center">
+          <span class="section-heading__eyebrow">
+            FAQ
+          </span>
+
+          <h2 class="section-heading__title">
+            Частые вопросы
+          </h2>
+        </div>
+
+        <div class="faq__list">
+
+          <article class="faq-item">
+            <button
+              class="faq-item__question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>Как начать?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                <p>
+                  Оставьте заявку через форму на сайте. После этого
+                  с вами свяжется наш специалист.
+                </p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="faq-item">
+            <button
+              class="faq-item__question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>Сколько времени занимает регистрация?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                <p>
+                  Заполнение формы занимает всего несколько минут.
+                </p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="faq-item">
+            <button
+              class="faq-item__question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>Можно ли получить дополнительную консультацию?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                <p>
+                  Да. После отправки заявки специалист ответит
+                  на все интересующие вас вопросы.
+                </p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="faq-item">
+            <button
+              class="faq-item__question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>Какие данные нужно указать?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                <p>
+                  На первом этапе достаточно имени и email.
+                  Затем понадобится номер телефона.
+                </p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="faq-item">
+            <button
+              class="faq-item__question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>Безопасны ли мои данные?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                <p>
+                  Мы используем данные только для обработки заявки
+                  и связи с вами.
+                </p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="faq-item">
+            <button
+              class="faq-item__question"
+              type="button"
+              aria-expanded="false"
+            >
+              <span>Что происходит после отправки формы?</span>
+              <span class="faq-item__icon">+</span>
+            </button>
+
+            <div class="faq-item__answer">
+              <div class="faq-item__answer-inner">
+                <p>
+                  Вы увидите подтверждение отправки, после чего
+                  с вами свяжется наш специалист.
+                </p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- LEAD FORM -->
+    <section class="lead section" id="lead-form">
+      <div class="container">
+
+        <div class="lead__box">
+
+          <div class="lead__content">
+            <span class="section-heading__eyebrow">
+              Начните сейчас
+            </span>
+
+            <h2 class="lead__title">
+              Оставьте заявку
+            </h2>
+
+            <p class="lead__description">
+              Заполните короткую форму, и мы свяжемся с вами.
+            </p>
+          </div>
+
+
+          <form
+            class="lead-form"
+            id="leadForm"
+            novalidate
+          >
+
+            <!-- STEP 1 -->
+            <div
+              class="lead-form__step is-active"
+              data-form-step="1"
+            >
+
+              <div class="lead-form__progress">
+                <span class="is-active"></span>
+                <span></span>
+              </div>
+
+              <div class="form-field">
+                <label
+                  class="form-field__label"
+                  for="name"
+                >
+                  Имя
+                </label>
+
+                <input
+                  class="form-field__input"
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Ваше имя"
+                  autocomplete="name"
+                  required
+                >
+
+                <span
+                  class="form-field__error"
+                  data-error="name"
+                ></span>
+              </div>
+
+
+              <div class="form-field">
+                <label
+                  class="form-field__label"
+                  for="email"
+                >
+                  Email
+                </label>
+
+                <input
+                  class="form-field__input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="example@email.com"
+                  autocomplete="email"
+                  required
+                >
+
+                <span
+                  class="form-field__error"
+                  data-error="email"
+                ></span>
+              </div>
+
+
+              <button
+                class="button button--primary lead-form__button"
+                type="button"
+                data-next-step
+              >
+                Далее
+              </button>
+
+            </div>
+
+
+            <!-- STEP 2 -->
+            <div
+              class="lead-form__step"
+              data-form-step="2"
+            >
+
+              <div class="lead-form__progress">
+                <span class="is-active"></span>
+                <span class="is-active"></span>
+              </div>
+
+              <div class="form-field">
+                <label
+                  class="form-field__label"
+                  for="phone"
+                >
+                  Телефон
+                </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="Введите номер"
+                />
+
+                <!-- <input
+                  class="form-field__input"
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="+380 (__) ___-__-__"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  maxlength="19"
+                  required
+                > -->
+
+                <span
+                  class="form-field__error"
+                  data-error="phone"
+                ></span>
+              </div>
+
+
+              <label class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="checkbox"
+                  id="agreement"
+                  required
+                >
+
+                <span class="checkbox__custom"></span>
+
+                <span class="checkbox__text">
+                  Я согласен на обработку персональных данных
+                </span>
+              </label>
+
+              <span
+                class="form-field__error"
+                data-error="agreement"
+              ></span>
+
+
+              <div class="lead-form__actions">
+
+                <button
+                  class="button button--secondary"
+                  type="button"
+                  data-prev-step
+                >
+                  Назад
+                </button>
+
+                <button
+                  class="button button--primary"
+                  type="submit"
+                >
+                  Отправить заявку
+                </button>
+
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- STICKY CTA -->
+  <div
+    class="sticky-cta"
+    data-sticky-cta
+  >
+    <div class="sticky-cta__inner">
+
+      <div class="sticky-cta__content">
+        <span class="sticky-cta__label">
+          Специальное предложение
+        </span>
+
+        <span
+          class="sticky-cta__timer"
+          data-sticky-timer
+        >
+          15:00
+        </span>
+      </div>
+
+      <a
+        class="button button--primary sticky-cta__button"
+        href="#lead-form"
+        data-cta
+      >
+        Начать сейчас
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- SUCCESS MODAL -->
+  <div
+    class="modal"
+    id="successModal"
+    aria-hidden="true"
+  >
+
+    <div
+      class="modal__overlay"
+      data-modal-close
+    ></div>
+
+    <div
+      class="modal__content"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+
+      <button
+        class="modal__close"
+        type="button"
+        aria-label="Закрыть"
+        data-modal-close
+      >
+        ×
+      </button>
+
+      <div class="modal__icon">
+        ✓
+      </div>
+
+      <h2
+        class="modal__title"
+        id="modalTitle"
+      >
+        Заявка принята
+      </h2>
+
+      <p class="modal__text">
+        Спасибо! Мы получили вашу заявку и свяжемся с вами
+        в ближайшее время.
+      </p>
+
+      <button
+        class="button button--primary"
+        type="button"
+        data-modal-close
+      >
+        Отлично
+      </button>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/js/intlTelInput.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

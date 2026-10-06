@@ -1,0 +1,36 @@
+.lead {
+  background: var(--color-dark);
+}
+
+.lead__box {
+  display: grid;
+  gap: 40px;
+
+  padding: 32px;
+
+  border-radius: var(--radius-lg);
+
+  background: #1f2937;
+}
+
+.lead__content {
+  color: var(--color-white);
+}
+
+.lead__content .section-heading__eyebrow {
+  color: #a5a0ff;
+}
+
+.lead__title {
+  margin: 0 0 16px;
+
+  font-size: clamp(32px, 6vw, 48px);
+}
+
+.lead__description {
+  margin: 0;
+
+  color: #9ca3af;
+
+  line-height: 1.6;
+}

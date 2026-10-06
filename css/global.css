@@ -1,0 +1,41 @@
+.container {
+  width: min(
+    calc(100% - 32px),
+    var(--container)
+  );
+
+  margin-inline: auto;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+.section-heading--center {
+  text-align: center;
+}
+
+.section-heading__eyebrow {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--color-primary);
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.section-heading__title {
+  margin: 0;
+
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.15;
+}
